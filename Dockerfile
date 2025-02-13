@@ -10,7 +10,7 @@ COPY package.json  pnpm-lock.yaml* ./
 # install pnpm if not already installed
 RUN npm install -g pnpm
 
-RUN pnpm install -g rimraf
+RUN npm install -g rimraf
 
 # install dependencies
 RUN pnpm -r install
